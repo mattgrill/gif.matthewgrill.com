@@ -2,12 +2,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "*.html", "use": "@now/static" },
-    { "src": "/index.js", "use": "@now/static" }
+    { "src": "*.html", "use": "@now/static" }
   ],
   "routes": [
     { "src": "/", "dest": "/index.html" },
-    { "src": "/index.js", "dest": "/index.js" },
     { "src": "/(.*)", "dest": "/index.html" }
 
   ]
